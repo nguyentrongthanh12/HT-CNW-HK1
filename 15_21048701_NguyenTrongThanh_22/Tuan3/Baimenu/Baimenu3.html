@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px auto;
+        }
+        
+        .wrapper {
+            width: 960px;
+            height: 750px;
+        }
+        
+        header {
+            width: 960px;
+            height: 150px;
+            background-color: #304c7c;
+            position: absolute;
+        }
+        
+        .img1 {
+            position: absolute;
+            left: 20px;
+            top: 30px
+        }
+        
+        .form1 {
+            position: absolute;
+            right: 20px;
+            top: 8px;
+        }
+        
+        .p1 {
+            position: absolute;
+            left: 100px;
+            top: 30px;
+            font-size: 40px;
+            color: white;
+        }
+        
+        .p2 {
+            position: absolute;
+            left: 100px;
+            top: 70px;
+            font-size: 18px;
+            color: white;
+        }
+        
+        .menu li {
+            list-style: none;
+            width: 100px;
+            height: 45px;
+            background-color: #6289ce;
+            position: absolute;
+            float: left;
+            line-height: 45px;
+            text-indent: 20px;
+        }
+        
+        .menu li>a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .menu li:hover {
+            background-color: yellow;
+            font-style: italic;
+        }
+        
+        .menu li:last-child {
+            bottom: 0px;
+            right: 20px;
+        }
+        
+        li:nth-child(4) {
+            width: 150px;
+            right: 130px;
+            bottom: 0px;
+        }
+        
+        li:nth-child(3) {
+            width: 120px;
+            right: 290px;
+            bottom: 0px;
+        }
+        
+        li:nth-child(2) {
+            right: 420px;
+            bottom: 0px;
+        }
+        
+        li:nth-child(1) {
+            right: 530px;
+            bottom: 0px;
+        }
+        
+        .content {
+            height: 600px;
+            width: 960px;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .col1 {
+            width: 440px;
+            height: 600px;
+        }
+        
+        .col2 {
+            width: 220px;
+            height: 600px;
+        }
+        
+        .col3 {
+            ;
+            width: 300px;
+            height: 600px;
+        }
+        
+        .A1 {
+            position: absolute;
+            top: 180px;
+            left: 290px;
+            font-size: x-large;
+        }
+        
+        .a2 {
+            position: absolute;
+            top: 230px;
+            left: 290px;
+            color: red;
+            text-shadow: 4px 4px 8px greenyellow;
+            font-style: italic;
+        }
+        
+        .table {
+            position: absolute;
+            top: 310px;
+            left: 290px;
+        }
+        
+        #B1 {
+            position: absolute;
+            top: 230px;
+            left: 720px;
+            font-size: x-large;
+        }
+        
+        #b1 {
+            position: absolute;
+            top: 290px;
+            left: 720px;
+        }
+        
+        #b2 {
+            position: absolute;
+            top: 400px;
+            left: 720px;
+        }
+        
+        #b3 {
+            position: absolute;
+            top: 470px;
+            left: 720px;
+        }
+        
+        #hr1 {
+            position: absolute;
+            width: 660px;
+            top: 220px;
+            border-top: dotted 2px;
+        }
+        
+        #hr2 {
+            position: absolute;
+            left: 720px;
+            width: 200px;
+            top: 270px;
+            border-top: dotted 2px;
+        }
+        
+        #hr3 {
+            position: absolute;
+            left: 950px;
+            width: 280px;
+            top: 250px;
+            border-top: dotted 2px;
+        }
+        
+        #C1 {
+            position: absolute;
+            top: 210px;
+            left: 950px;
+            font-size: x-large;
+        }
+        
+        .img2 {
+            position: absolute;
+            top: 280px;
+            left: 950px;
+            width: 250px;
+            height: 100px
+        }
+        
+        .c3 {
+            position: absolute;
+            top: 400px;
+            left: 950px;
+        }
+        
+        .c4 {
+            position: absolute;
+            top: 520px;
+            right: 300px;
+            color: #304c7c;
+            font-weight: bolder;
+        }
+        
+        footer {
+            height: 30px;
+            width: 960px;
+            background-color: #304c7c;
+        }
+        
+        footer p {
+            left: 20px;
+            width: 960px;
+            line-height: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="/Ảnh chụp màn hình 2023-03-10 155609.png" alt="hoa" width="80" ; height="80" class="img1">
+            <p class="p1">FlowerBox 360</p>
+            <hr id="hr1">
+            <p class="p2">...to get your daily dose of luxury roses!</p>
+            <form action="" class="form1">
+                <input type="text">
+                <button>GO</button>
+            </form>
+            <ul class="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Promotion</a></li>
+                <li><a href="">Gift Baskets</a></li>
+                <li><a href="">Flower Services</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="col1">
+                <p class="A1">Why Not Contact Us Today!</p>
+                <hr>
+                <p class="a2">For FlowerBox 360 shoppers that means not only <br> can you send your friends and loved ones the <br> highest quality flowers found on online, but that you <br> can do so at a great value.</p>
+                <table class="table" border="0px">
+                    <tr>
+                        <td>Name:</td>
+                        <td>Email:</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Telephone:</td>
+                        <td>Subject</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Message:</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><textarea name="" id="" cols="45" rows="5"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button>Submit</button>
+                            <button>Reset</button>
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
+            <div class="col2">
+                <p id="B1">FlowerBox 360 Info!</p>
+                <hr id="hr2">
+                <div id="b1">
+                    <p>Operating Hours:</p>
+                    <p>Monday-Friday: 9.00am-5.00pm.</p>
+                    <p>Saturday:9.00am-1.pm.</p>
+                    <p>Sunday: Closed (No Deliveries)</p>
+                    <p>ORDER ONLINE 24/7 </p>
+                </div>
+                <div id="b2">
+                    <p>Software Engineering Dept.</p>
+                    <p>Information Technology Falcuty</p>
+                    <p>First Floor, H Building</p>
+                </div>
+                <div id="b3">
+                    <p>12 Nguyen Van Bao St, Ward 4</p>
+                    <p>Go Vap District</p>
+                    <p>Ho Chi Minh City</p>
+                    <p>Tel: 0283 8940 390</p>
+                    <p>Fax: 0283.9940 954</p>
+                </div>
+            </div>
+            <div class="col3">
+                <p id="C1">Discounts & Specials</p>
+                <hr id="hr3">
+                <img src="/Ảnh chụp màn hình 2023-03-11 010930.png" alt="" class="img2">
+                <div class="c3">
+                    <p>FlowerBox 360 offers many great</p>
+                    <p>discounts thoughout the year, from</p>
+                    <p>coupons and coupon codes, to promo</p>
+                    <p>codes and other savings. We also</p>
+                    <p>offer military flower discounts to our</p>
+                    <p>wonderful troops!</p>
+                </div>
+                <p class="c4">Read More >></p>
+            </div>
+
+        </div>
+        <footer>
+            <p style="color: white;">Copyright &#169; 2017 - All Rights Reserved - <span style="color: #6289ce;">Software Engineering Department - Industrial University of Ho Chi Minh City</span> </p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -21,6 +21,10 @@
     color: rgb(165, 42, 42);
 }
 
+footer p {
+    position: absolute;
+}
+
 #starter,
 #dessert {
     width: 100%;
