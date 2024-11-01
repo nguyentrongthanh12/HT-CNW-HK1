@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai3</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px auto;
+        }
+        
+        .item1 {
+            grid-area: head;
+            background: red;
+        }
+        
+        .item2 {
+            grid-area: menu;
+            background-color: blue;
+        }
+        
+        .item3 {
+            grid-area: right;
+            background-color: green;
+        }
+        
+        .item4 {
+            grid-area: footer;
+            background-color: blueviolet;
+        }
+        
+        .grid-container {
+            width: 1089px;
+            display: grid;
+            grid-template-areas: 'head head head head head head' 'menu menu menu menu right right' 'footer footer footer footer footer footer';
+            gap: 5px;
+            margin-left: 200px;
+        }
+        
+        .header {
+            background: #ac4b16;
+            padding-left: 10px;
+        }
+        
+        h1 {
+            color: #808100;
+        }
+        
+        .menu li:last-child {
+            width: 50px;
+            height: 20px;
+        }
+        
+        .menu li:nth-child(4) {
+            width: 50px;
+            height: 20px;
+        }
+        
+        .menu li:nth-child(3) {
+            width: 50px;
+            height: 20px;
+        }
+        
+        .menu li:nth-child(2) {
+            width: 50px;
+            height: 20px;
+        }
+        
+        .menu li:nth-child(1) {
+            width: 50px;
+            height: 20px;
+        }
+        
+        .menu li {
+            float: left;
+            padding-right: 30px;
+            list-style: none;
+            width: 100px;
+            height: 45px;
+            line-height: 15px;
+            text-indent: 20px;
+        }
+        
+        .menu li>a {
+            color: #ac4b16;
+            text-decoration: none;
+        }
+        
+        .menu li:hover {
+            background: yellow;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="item1">
+            <div class="header">
+                <h1>AUTUMN TRAVEL COMPANY</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Order</a></li>
+                </ul>
+            </div>
+            <div class="img"><img src="../image/lacay.png" alt="" width="1089px"></div>
+        </div>
+        <div class="item2">
+            <h2>Sign up for membership benefits</h2>
+            <p> Our philisophical are transparency, respect,formality <br> and responsibility. Our stimulus is your enthusiasm. <br> Our motto is your satisfation.</p>
+            <form action="" class="form">
+                <input type="text" name="Username" id=""> <br>
+                <input type="text" name="E-mail" id=""> <br>
+                <input type="text" name="Password" id=""> <br>
+                <input type="text" name="Retype password" id=""> <br>
+                <input type="button" value="Sign me up">
+            </form>
+        </div>
+        <div class="item3">
+            <ul>
+                <h3>Links</h3>
+                <li><a href="#">Make your Own Tour</a></li>
+                <li><a href="#">Maldives Tours</a></li>
+                <li><a href="#">Nature & Adventure</a></li>
+                <li><a href="#">Rusia Tours</a></li>
+                <li><a href="#">Nature & Adventure</a></li>
+                <li><a href="#">Europe Tours</a></li>
+            </ul>
+            <h3>More Info</h3>
+            <div>
+                <img src="../image/la.png" alt="">
+                <p>Our purpose is the client who gives to us the opportunites to serve and to make known the reality arround the world</p>
+            </div>
+
+        </div>
+        <div class="item4">
+            <img src="../image/footer.png" alt="" width="1089px" height="40px">
+        </div>
+    </div>
+</body>
+
+</html>

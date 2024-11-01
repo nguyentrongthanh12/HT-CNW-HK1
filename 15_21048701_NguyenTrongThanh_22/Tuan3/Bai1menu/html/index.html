@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px auto;
+        }
+        
+        .wrapper {
+            width: 1089px;
+            height: 900px;
+            background-color: #68bded;
+        }
+        
+        header {
+            width: 1089px;
+            height: 50px;
+        }
+        
+        nav {
+            width: 1089px;
+            height: 750px;
+        }
+        
+        .content_left {
+            float: left;
+            width: 50%;
+            height: 750px;
+        }
+        
+        .content_right {
+            float: left;
+            width: 50%;
+            height: 750px;
+        }
+        
+        footer {
+            width: 1089px;
+            height: 100px;
+            color: white;
+            text-align: center;
+            padding-top: 10px;
+        }
+        
+        .menu>li {
+            list-style: none;
+            float: left;
+            line-height: 35px;
+            text-indent: 25px;
+        }
+        
+        .menu li a {
+            text-decoration: solid;
+            font-size: 20px;
+            color: white;
+        }
+        
+        .menu>li:hover {
+            background-color: green;
+            font-style: italic;
+        }
+        
+        .menu>li:nth-last-child(1) {
+            width: 100px;
+            height: 50px;
+        }
+        
+        .menu>li:nth-child(1) {
+            width: 100px;
+            height: 50px;
+        }
+        
+        .menu>li:nth-child(2) {
+            width: 100px;
+            height: 50px;
+        }
+        
+        .menu>li:nth-child(3) {
+            width: 100px;
+            height: 50px;
+        }
+        
+        .menu>li:nth-child(4) {
+            width: 100px;
+            height: 50px;
+        }
+        
+        .menu-input {
+            position: absolute;
+            right: 500px;
+            top: 15px;
+        }
+        
+        .table {
+            color: white;
+        }
+        
+        #input {
+            width: 300px;
+        }
+        
+        .menu-parent {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            width: 150px;
+            height: 100px;
+        }
+        
+        .menu-child {
+            display: none;
+            background-color: green;
+            color: white;
+            width: 150px;
+            height: 50px;
+            border-top: solid 2px yellow;
+            line-height: 40px;
+            text-indent: 30px;
+        }
+        
+        .menu-child:hover {
+            background-color: red;
+            font-weight: bold;
+            color: rgb(29, 199, 66);
+        }
+        
+        .menu-parent:hover .menu-child {
+            display: inline-block;
+            z-index: 999999999;
+        }
+        
+        .product {
+            width: 540px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            background-color: red;
+            padding: 10px;
+        }
+        
+        .row-item {
+            width: 520px;
+            height: 130px;
+            background-color: greenyellow;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 5px;
+        }
+        
+        .item {
+            width: 150px;
+            height: 130px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a>
+                    <div class="menu-parent">
+                        <div class="menu-child"><a href="#">Clothing</a></div>
+                        <div class="menu-child"><a href="#">Item</a></div>
+                    </div>
+                </li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="menu-input">
+                <input type="text" name id>
+                <input type="button" value="GO">
+            </div>
+        </header>
+        <nav>
+            <hr style="border-top: white dotted 2px">
+            <div class="content_left">
+                <h1 style="margin-top: 50px; color: white; font-size: 50px;">Registration Information
+                </h1>
+                <p style="margin-top: 10px; color: white; ">Start your travel planning now with our on-line tour regstration form. Just tell us a little about yourself and your group and one of our travel experts will contact you to create the perfect custom built for your group's needs .
+                </p>
+                <table class="table">
+                    <tr>
+                        <td>Title</td>
+                        <td>
+                            <select name="Mr" id>
+                                    <option value>Mr</option>
+                                    <option value>Mrs</option>
+                                </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Full Name</td>
+                        <td><input type="text" name id="input" placeholder="First Name"></td>
+                    </tr>
+                    <tr>
+                        <td>Mailling Address</td>
+                        <td><input type="text" name="Mailling Address" id="input" placeholder="Mailling Address"></td>
+                    </tr>
+                    <tr>
+                        <td>City</td>
+                        <td><input type="text" name="City" id="input" placeholder="City"></td>
+                    </tr>
+                    <tr>
+                        <td>Country</td>
+                        <td><input type="text" name id="input" placeholder="Country"></td>
+                    </tr>
+                    <tr>
+                        <td>Specific question or <br> requests about your tour
+                        </td>
+                        <td><textarea rows="5" cols="39"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Submit" style="border: dotted 2px;"><input type="reset" value="Reset" style="margin-left: 20px; border: dotted 2px;"></td>
+                    </tr>
+                </table>
+                <div class="product">
+                    <div class="row-item">
+                        <div class="item">
+                            <img src="../img/sky.png" alt="" style="width: 140px; height: 100px;">
+                            <p>Quan ao</p>
+                            <img src="../img/sky.png" alt="" style="width: 20px; height: 10px;">
+                        </div>
+                        <div class="item">
+                            <img src="../img/sky.png" alt="" style="width: 20px; height: 10px;">
+                            <p>Quan ao</p>
+                            <img src="../img/sky.png" alt="" style="width: 20px; height: 10px;">
+                        </div>
+                        <div class="item">
+                            <img src="../img/sky.png" alt="" style="width: 20px; height: 10px;">
+                            <p>Quan ao</p>
+                            <img src="../img/sky.png" alt="" style="width: 20px; height: 10px;">
+                        </div>
+                    </div>
+                    <div class="row-item">
+                        <div class="item">
+                            <img src="../img/sky.png" alt="" style="width: 20px; height: 10px;">
+                            <p>Quan ao</p>
+                            <img src="../img/sky.png" alt="" style="width: 20px; height: 10px;">
+                        </div>
+                        <div class="item">
+                            <img src="../img/sky.png" alt="" style="width: 20px; height: 10px;">
+                            <p>Quan ao</p>
+                            <img src="../img/sky.png" alt="" style="width: 20px; height: 10px;">
+                        </div>
+                        <div class="item">
+                            <img src="../img/sky.png" alt="" style="width: 20px; height: 10px;">
+                            <p>Quan ao</p>
+                            <img src="../img/sky.png" alt="" style="width: 20px; height: 10px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content_right">
+                <img src="../img/sky.png" alt style="width: 540px; height: 350px; margin-top: 50px;">
+                <h1 style="color: blue; padding-left: 30px; font-size: 50px">Your've arrived.
+                </h1>
+                <p style="color: blue; padding-left: 33px; font-size: 30px;">Journeys as great as the destinations.</p>
+            </div>
+            <hr style="border: dotted 2px white;">
+        </nav>
+        <footer>
+            <p>2016 Sky World Tours. All rights reserved.
+            </p>
+            <p>COntact information: Student Name | StudentID | Testing Date
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

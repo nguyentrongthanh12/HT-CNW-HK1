@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../jquery/jquery-3.7.1.min.js"></script>
+    <script src="../jquery/bootstrap.min.js"></script>
+    <style>
+        [class*=col-] {
+            padding: 0px;
+            margin: 0px auto;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $('#btn').click(function() {
+                $('#Mymodal').modal();
+            })
+
+            function kiemtraemail() {
+                var email = $('#txtemail').val();
+                var test = /^[a-zA-Z0-9.%_+-]+@[a-zA-Z0-9.%_+-]+\.[a-zA-Z0-9.+-_%]{2,}$/;
+                var testemail = test.test(email);
+                if (testemail == true) {
+                    alert("Nhap dung");
+                } else {
+                    alert("Nhap sai")
+                }
+            }
+            $('#txtemail').blur(kiemtraemail);
+
+            function kiemtrahoten() {
+                var hoten = $('txthoten').val();
+                var testht = /^[A-Z]{1}[a-z]+(\s[A-Z]{1}[a-z]*)+$/;
+                var testhoten = testht.test(hoten);
+                if (testhoten == true) {
+                    alert('Nhap dung');
+                } else {
+                    alert('Nhap sai');
+                }
+            }
+            $('#txthoten').blur(kiemtrahoten);
+
+            function kiemtrasdt() {
+                var sdt = $('#txtsdt').val();
+                var testdt = /^0[0-9]{9}/;
+                var testsdt = testdt.test(sdt);
+                if (testsdt == true) {
+                    alert("Nhap dung");
+                } else {
+                    alert("Nhap sai");
+                }
+            }
+            $('#txtsdt').blur(kiemtrasdt);
+        })
+    </script>
+</head>
+
+<body>
+    <div class="container bg-danger">
+        <div class="row">
+            <nav class="navbar navbar-expand">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link">Trang chu</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Mat hang</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Gioi thieu</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Ve chung toi                           
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item"><a href="#">Action</a></li>
+                            <li class="dropdown-item"><a href="#">Anotheraction</a></li>
+                            <li class="dropdown-item"><a href="#">Somethingelse here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Tra loi</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <table class="table bg-light">
+                    <th>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </th>
+                    <tr>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-4">
+                <input type="button" value="Kiemtra" id="btn">
+                <form action="" id="Mymodal">
+                    <input type="tel" name="email" id="txtemail">
+                    <input type="text" name="Ho ten" id="txthoten">
+                    <input type="text" name="SDT" id="txtsdt">
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
